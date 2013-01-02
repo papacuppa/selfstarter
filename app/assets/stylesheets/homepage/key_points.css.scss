@@ -8,9 +8,9 @@
 
 .newspaper
 {
--moz-column-count:3; /* Firefox */
--webkit-column-count:3; /* Safari and Chrome */
-column-count:3;
+-moz-column-count:2; /* Firefox */
+-webkit-column-count:2; /* Safari and Chrome */
+column-count:2;
 }
 
 .point_copy {
