@@ -6,6 +6,13 @@
   padding: 35px 0;
 }
 
+.newspaper
+{
+-moz-column-count:3; /* Firefox */
+-webkit-column-count:3; /* Safari and Chrome */
+column-count:3;
+}
+
 .point_copy {
   width: 440px;
   h3 {
