@@ -20,6 +20,12 @@
   }
 }
 
+.pos_left
+{
+position:relative;
+left:-10px;
+}
+
 h3 {
   font-size: 42px;
   font-family: $primary_font, $secondary_font, $tertiary_font;
