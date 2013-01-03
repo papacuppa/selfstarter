@@ -20,6 +20,18 @@
   }
 }
 
+.right{
+ width:150px;
+ height:150px;
+ float:right;
+ background:red;
+}
+.left{
+ height:150px;
+ background:green;
+ overflow:hidden;
+}
+
 .point_copy_reward {
   width: 800px;
   h3, h5 {
