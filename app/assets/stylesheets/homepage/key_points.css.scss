@@ -13,23 +13,19 @@
   }
 }
 
+.point_around {
+  width: 440px;
+  float:right;
+  h3 {
+    margin: 5px 0 5px 0;
+  }
+}
+
 .point_copy_center {
   width: 800px;
   h3, h5 {
     margin: 5px 0px 5px 370px;
   }
-}
-
-.right{
- width:150px;
- height:150px;
- float:right;
- background:red;
-}
-.left{
- height:150px;
- background:green;
- overflow:hidden;
 }
 
 .point_copy_reward {
