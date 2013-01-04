@@ -33,7 +33,7 @@ payment_description: "You really should change this text because people will see
 
 # Amazon limits how much we can charge people with their Multi-Use tokens.
 # You probably should add some leeway to account for international shipping
-charge_limit: 25.00
+charge_limit: 25.06
 
 # Stats settings
 
@@ -54,7 +54,7 @@ progress_text: "Funded"
 # Call to action section
 
 # On Lockitron, it's "First Batch Ships in March 2013"
-ships: "Don't miss out before Wayki launches (RRP £99)"
+ships: "te"
 
 # On Lockitron, it's "Reserve Now"
 call_to_action: "Reserve Now"
