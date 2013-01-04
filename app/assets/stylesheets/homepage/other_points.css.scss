@@ -9,17 +9,21 @@
   }
   #section-1 {
     background: url(asset-path("/assets/bubbles.png", "images")) no-repeat center top;
+	text-align: center;
   }
   #section-2 {
     background: url(asset-path("/assets/map.png", "images")) no-repeat center top;
     margin-right: 0px;
+	text-align: center;
   }
   #section-3 {
     background: url(asset-path("/assets/magnify.png", "images")) no-repeat center top;
+	text-align: center;
   }
   #section-4 {
     background: url(asset-path("/assets/people.png", "images")) no-repeat center top;
     margin-right: 0px;
+	text-align: center;
   }
   h4 {
     width: 400px;
