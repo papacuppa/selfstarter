@@ -46,19 +46,6 @@
       <p id="price"><%= Settings.price_human %></p>
       <p><%= Settings.dont_give_them_a_reason_to_say_no %></p>
       <p><%= like_button %></p>
-	  
-	  
-	  function social() {
-if(is_single()) { ?>
-<div class="tweet">
-<a rel="nofollow" href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal"  data-text="<?php the_title(); ?>" data-url="<?php the_permalink(); ?>" data-via="alexmoss" data-related="PleerSEO">Tweet</a>
-</div>
-<div class="like"><?php echo do_shortcode('[fblikesend layout="button_count" faces="no"]'); ?></div>
-<div class="plusone"><?php echo do_shortcode('[google1 callback="googlebutton" size="medium"]'); ?></div>
-<?php } }
-add_filter ('the_content', 'social', 100);
-	  
-	  
     </div>
     
   </div>
