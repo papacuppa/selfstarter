@@ -19,14 +19,28 @@
     text-align: center;
     margin: 0 auto;
   
-  #social_container ul li
-{
-	margin: 0 auto;
-    text-align: center;
-    margin: 0 auto;
-	overflow:hidden;
-}
-  	
+  #facebook_button_container
+    {
+      margin: 0 auto;
+      display: inline-block;
+	  position: relative;
+	 
+    }
+ 
+    #tweet_button_container
+    {
+      margin: 0 auto;
+      display: inline-block;
+	  position: relative;
+	}
+	
+	#pin_button_container
+    {
+      margin: 0 auto;
+      display: inline-block;
+      position: relative; 
+    }
+	
   }
   #order_id
   {
@@ -37,7 +51,6 @@
     z-index: 9999;
   }
 }
-
 
 
 
