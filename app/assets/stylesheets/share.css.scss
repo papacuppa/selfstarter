@@ -13,34 +13,33 @@
       font-size: 24px;
     }
   }
-  
   #share 
   {
     margin: 0 auto;
     text-align: center;
     margin: 0 auto;
-    	
     #facebook_button_container
     {
       margin: 0 auto;
       display: inline-block;
+	  position: relative;
     }
-	
-	  }
-    #tweet_button_container
+    #pin_button_container
     {
       margin: 0 auto;
-      display: block;
-    }
-	
-	    #pin_button_container
-    {
-      margin: 0 auto;
-      display: block;
+      display: inline-block;
       position: relative;
       top: 1px;
       .pin-it-button
       {
+      }
+    }
+    #tweet_button_container
+    {
+      margin: 0 auto;
+      display: inline-block;
+	  position: relative;
+    }
   }
   #order_id
   {
@@ -51,4 +50,6 @@
     z-index: 9999;
   }
 }
+
+
 
