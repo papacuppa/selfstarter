@@ -5,19 +5,26 @@
 @import "homepage/press";
 @import "homepage/faq";
 
-#tweet_button
-{
-  margin-top: 5px;
-  margin-top: 20px;
-  vertical-align: middle;
-}
-
 .fb-like 
 {
 	margin-left: 5px;
 	margin-top: 20px;
 	vertical-align: middle;
 }
+
+.twitter-share-button
+{
+  margin-top: 5px;
+  margin-top: 20px;
+  vertical-align: middle;
+}
+
+.pin-it-button
+      {
+	  margin-left: 5px;
+	margin-top: 20px;
+	vertical-align: middle;
+      }
 
 #video 
 {
