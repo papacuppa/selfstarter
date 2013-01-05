@@ -31,6 +31,13 @@
       display: inline-block;
     }
 	
+	  }
+    #tweet_button_container
+    {
+      margin: 0 auto;
+      display: block;
+    }
+	
 	    #pin_button_container
     {
       margin: 0 auto;
@@ -39,13 +46,6 @@
       top: 1px;
       .pin-it-button
       {
-      }
-    }
-    #tweet_button_container
-    {
-      margin: 0 auto;
-      display: block;
-    }
   }
   #order_id
   {
