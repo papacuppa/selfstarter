@@ -95,6 +95,7 @@
   }
 }
 
-.social-media { 
-    text-align: right;
+.social-media {
+    position:relative;
+    top:-12px; /* <-- Play with this. */
 }
