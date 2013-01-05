@@ -30,6 +30,9 @@
       position: relative;
       top: 1px;
       .pin-it-button
+	  float: left;
+	  margin: 0 auto 10px auto;
+      width: 300px;
       {
       }
     }
@@ -37,6 +40,9 @@
     {
       margin: 0 auto;
       display: inline-block;
+	  float: left;
+	  margin: 0 auto 10px auto;
+      width: 300px;
     }
   }
   #order_id
