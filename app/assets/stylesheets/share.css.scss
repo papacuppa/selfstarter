@@ -13,17 +13,25 @@
       font-size: 24px;
     }
   }
+  
+  #social container
+ {
+ height: 50px;
+ }
+    
   #share 
   {
     margin: 0 auto;
     text-align: center;
     margin: 0 auto;
+    	
     #facebook_button_container
     {
       margin: 0 auto;
       display: inline-block;
     }
-    #pin_button_container
+	
+	    #pin_button_container
     {
       margin: 0 auto;
       display: block;
