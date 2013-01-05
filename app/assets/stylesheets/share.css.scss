@@ -20,30 +20,27 @@
     margin: 0 auto;
     #facebook_button_container
     {
-      margin: 5px 0 5px 0;
+      margin: 0 auto;
       display: inline-block;
 	  position: relative;
-	  width: 383;
-	  float: left;	 
+	 
     }
     #pin_button_container
     {
-      margin: 5px 0 5px 0;
-	  width: 383;
-	  float: left;
+      margin: 0 auto;
       display: inline-block;
       position: relative;
+      
       .pin-it-button
       {
       }
     }
     #tweet_button_container
     {
-      margin: 5px 0 5px 0;
+      margin: 0 auto;
       display: inline-block;
 	  position: relative;
-	 width: 383;
-	  float: left;
+	 
     }
   }
   #order_id
