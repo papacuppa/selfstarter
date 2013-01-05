@@ -36,9 +36,12 @@
 	
 	#pin_button_container
     {
-      margin: 15px 0px  0px 0px;
+      margin: 0 auto;
       display: inline-block;
       position: relative; 
+	  position: absolute;
+left: 90px;
+top: 90px;
     }
 	
   }
