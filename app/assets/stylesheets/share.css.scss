@@ -23,14 +23,16 @@
       margin: 5px 0 5px 0;
       display: inline-block;
 	  position: relative;
-	 
+	  width: 383;
+	  float: left;	 
     }
     #pin_button_container
     {
       margin: 5px 0 5px 0;
+	  width: 383;
+	  float: left;
       display: inline-block;
       position: relative;
-      
       .pin-it-button
       {
       }
@@ -40,7 +42,8 @@
       margin: 5px 0 5px 0;
       display: inline-block;
 	  position: relative;
-	 
+	 width: 383;
+	  float: left;
     }
   }
   #order_id
