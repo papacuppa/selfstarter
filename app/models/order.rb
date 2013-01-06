@@ -38,7 +38,7 @@ class Order < ActiveRecord::Base
   end
 
   def self.next_order_number
-    if Order.count > 0
+    if Order.count > 12
       Order.order("number DESC").limit(1).first.number.to_i + 1
     else
       1
