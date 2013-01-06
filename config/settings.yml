@@ -54,7 +54,7 @@ progress_text: "Goal Reached!"
 # Call to action section
 
 # On Lockitron, it's "First Batch Ships in March 2013"
-ships: "Waiting List: 4 - 6 months"
+ships: "Waiting List is 4 - 6 months"
 
 # On Lockitron, it's "Reserve Now"
 call_to_action: "Reserve Now"
