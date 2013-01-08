@@ -57,9 +57,9 @@ progress_text: "Goal Reached!"
 ships: "Shipping in 3 - 5 months"
 
 # On Lockitron, it's "Reserve Now"
-call_to_action: "Reserve For 49"
+call_to_action: "Reserve For £49"
 # On Lockitron, this is "Only $149 for a limited time"
-price_human: "Hurry! Backer 1 - 250 Saves 50%"
+price_human: "Hurry! Discount For Backers 1 - 250" 
 
 # The paragraph below the price. You'd probably say something about how you're not going to charge them before it ships (so it's less risky).
 dont_give_them_a_reason_to_say_no: "We won't charge your card until your Wayki is boxed up and ready. (Free UK shipping.)"
