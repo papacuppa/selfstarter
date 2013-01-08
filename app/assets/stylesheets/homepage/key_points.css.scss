@@ -56,6 +56,15 @@ h3 {
   height: 1300px;
 }
 
+.point_copy right {
+  width: 440px;
+  float:right; width:45%;
+  line-height: 1.5;
+  h3 {
+    margin: 5px 0px 5px 0;
+  }
+}
+
 .point_aroundl {
   width: 440px;
   float:left; width:45%;
@@ -77,7 +86,6 @@ h3 {
 .point_aroundl2 {
   width: 440px;
   float:left; width:65%;
-  line-height: 1.5;
   h3 {
     margin: 5px 0px 5px 0;
   }
@@ -111,7 +119,6 @@ h3 {
 
 .point_copy_reward {
   width: 800px;
-  line-height: 1.5;
   h3, h5 {
     margin: 5px 0px 5px 370px;
   }
