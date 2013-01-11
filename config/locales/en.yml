@@ -2,12 +2,4 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  number:
-    currency:
-        format:
-            format: "%u%n"
-            unit: "&pound;"
-            # These three are to override number.format and are optional
-            separator: "."
-            delimiter: ","
-            precision: 2
+  hello: "Hello world"
