@@ -35,12 +35,36 @@
     <ul class='col2'>
       <li>
         <details class=''>
-            <summary>What happens if I can’t disable Wayki?</summary>
-          <p>We have some plans ahead but currently there are two options:
-<br>
-1. If there's a chance that your bathroom will be engaged when you get up, leave the brush in another room which you have access to. (No, not your bedroom - too easy ^^.)
-<br>
-2. If we have a good return on Kickstarter we'll package every Wayki order with a second brush - one for the bathroom and one as a backup.</p>
+          <summary>How do I change the CSS?</summary>
+          <p>Head over to <code>app/assets/stylesheets/variables.css.scss</code>. It makes it easy to change around the elements used throughout the HTML.
+          <br />
+          <br />
+          Alternatively, you can dive right into the CSS, have a look at <code>app/assets/stylesheets/main.css.scss</code>.</p>
         </details>
       </li>
-	  
+      <li class=''>
+        <details class=''>
+          <summary>Why did you release this?</summary>
+          <p>Hardware startups are less welcome on Kickstarter than they were 6 months ago. We needed to roll our own kickstarter, so we did. Other hardware startups probably will too, so we made it easier for them by open sourcing our way of doing it.</p>
+        </details>
+      </li>
+      <li class=''>
+        <details class=''>
+          <summary class=''>What software stack does this use?</summary>
+          <p>It's a Ruby on Rails app that makes heavy use of SCSS, Kickstarter's wonderful <code>amazon_flex_pay</code> gem, and a hint of CoffeeScript.</p>
+        </details>
+      </li>
+      <li class=''>
+        <details class=''>
+          <summary class=''>How do I deploy it?</summary>
+          <p>We recommend using Heroku. We include a Procfile for you, so all you need to do is:
+          <p>
+            <p>Install the <a href="https://toolbelt.heroku.com/">Heroku Toolbelt</a></p>
+            <p>Run <code>heroku create</code> in Selfstarter's folder</code></p>
+            <p>Run <code>git push heroku master</code> in Selfstarter's folder</p>
+          </p>
+        </details>
+      </li>
+    </ul>
+  </div>
+</div>
