@@ -57,7 +57,7 @@ progress_text: "Goal Reached!"
 ships: "Shipping in 3 - 5 months"
 
 # On Lockitron, it's "Reserve Now"
-call_to_action: "Reserve For £49"
+call_to_action: "Reserve For 49"
 # On Lockitron, this is "Only $149 for a limited time"
 price_human: "Hurry! Discount For Backers 1 - 250" 
 
