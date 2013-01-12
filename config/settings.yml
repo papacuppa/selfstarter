@@ -29,7 +29,7 @@ amazon_access_key: "AKIAJJGDLRDUYQ4YQJFA"
 amazon_secret_key: "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"
 price: 	19.95
 
-payment_description: "You really should change this text because people will see it on Amazon's order page!!!!!"
+payment_description: "Get the morning advantage before everyone else."
 
 # Amazon limits how much we can charge people with their Multi-Use tokens.
 # You probably should add some leeway to account for international shipping
