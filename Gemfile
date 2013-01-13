@@ -5,6 +5,7 @@ gem 'rails', '3.2.11'
 group :development do
   gem 'sqlite3'
   gem 'pry-rails'
+  gem 'thin'
 end
 
 group :development do
