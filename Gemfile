@@ -16,6 +16,11 @@ group :production do
   gem 'pg'
 end
 
+source "http://rubygems.org"
+gem "nokogiri"
+gem "rack", "~>1.1"
+gem "rspec", :require => "spec"
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
