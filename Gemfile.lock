@@ -70,7 +70,6 @@ GEM
       metaclass (~> 0.0.1)
     multi_json (1.5.0)
     multi_xml (0.2.2)
-    newrelic_rpm (3.5.5.38)
     pg (0.14.1)
     pg (0.14.1-x86-mingw32)
     polyglot (0.3.3)
@@ -162,7 +161,6 @@ GEM
     uglifier (1.3.0)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
-    win32console (1.3.2)
     win32console (1.3.2-x86-mingw32)
 
 PLATFORMS
@@ -173,7 +171,6 @@ DEPENDENCIES
   amazon_flex_pay
   coffee-rails (~> 3.2.1)
   jquery-rails
-  newrelic_rpm
   pg
   pry-rails
   rails (= 3.2.11)
