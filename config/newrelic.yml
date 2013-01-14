@@ -3,9 +3,9 @@
 # Ruby, Java, .NET, PHP, and Python applications with deep visibility and low overhead.
 # For more information, visit www.newrelic.com.
 #
-# Generated January 13, 2013
+# Generated January 14, 2013
 #
-# This configuration file is custom generated for Wayki Tech
+# This configuration file is custom generated for shielded-cliffs-6449 Heroku
 
 # Here are the settings that are common to all environments:
 common: &default_settings
@@ -14,7 +14,7 @@ common: &default_settings
   # You must specify the license key associated with your New Relic
   # account.  This key binds your Agent's data to your account in the
   # New Relic service.
-  license_key: 'c3e282daef2cedd7cf30240e50f633a55583a740'
+  license_key: '8d4a5d0d5cd37edfd613cfa482278e823acde1e7'
   
   # Agent Enabled (Ruby/Rails Only)
   # Use this setting to force the agent to run or not run.
