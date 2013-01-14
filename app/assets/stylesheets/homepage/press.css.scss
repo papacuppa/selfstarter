@@ -6,7 +6,7 @@
   box-shadow:         0px 1px 3px 0px #acacac;
   li
   {
-    float: right;
+    margin-left: auto;
     margin: 0 16px;
     a {
       display: block;
@@ -21,21 +21,21 @@
   #awesomeblog a
   {
     background: url("/assets/press.png") no-repeat left center;
-    width: 202px;
+    width: 200px;
   }
   #coolpaper a
   {
     background: url("/assets/press.png") no-repeat left center;
-    width: 202px;
+    width: 200px;
   }
   #nicemag a
   {
     background: url("/assets/press.png") no-repeat left center;
-    width: 202px;
+    width: 200px;
   }
   #readcrunch a
   {
     background: url("/assets/press.png") no-repeat left center;
-    width: 202px;
+    width: 200px;
   }
 }
