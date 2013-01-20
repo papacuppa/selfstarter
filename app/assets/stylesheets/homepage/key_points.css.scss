@@ -28,7 +28,6 @@ h3 {
 #one {
   background: url(image_path("1-background.jpg")) no-repeat bottom left;
   height: 575px;
-  width: 936px;
 }
 
 #two {
@@ -83,15 +82,6 @@ h3 {
   }
 }
 
-.point_full {
-  width: 935px;
-  float:left;
-  line-height: 1.5;
-  h3, h5 {
-    margin: 5px 0px 5px 0;
-  }
-}
-
 .point_aroundr2 {
   width: 440px;
   float:right; width:45%;
@@ -114,6 +104,15 @@ h3 {
   line-height: 1.5;
   h3, h5 {
     margin: 5px 0px 5px 370px;
+  }
+}
+
+.point_full {
+  width: 935px;
+  float:left;
+  line-height: 1.5;
+  h3, h5 {
+    margin: 5px 0px 5px 0;
   }
 }
 
