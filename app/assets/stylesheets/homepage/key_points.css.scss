@@ -6,13 +6,6 @@
   padding: 35px 0;
 }
 
-.point_copy {
-  width: 440px;
-  h3 {
-    margin: 5px 0 5px 0;
-  }
-}
-
 h3 {
   font-size: 42px;
   font-family: $primary_font, $secondary_font, $tertiary_font;
@@ -61,6 +54,27 @@ h3 {
   line-height: 1.5;
   h3, h5 {
     margin: 5px 0px 5px 0;
+  }
+}
+
+.point_copy {
+  width: 440px;
+  h3 {
+    margin: 5px 0 5px 0;
+  }
+}
+
+.point_copy_left {
+  width: 440px;
+  h3 {
+    margin: 5px 0 5px 0;
+  }
+}
+
+.point_copy_right {
+  width: 440px;
+  h3 {
+    margin: 5px 0 5px 0;
   }
 }
 
