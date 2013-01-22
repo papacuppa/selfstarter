@@ -54,7 +54,7 @@ progress_text: "Goal Reached!"
 # Call to action section
 
 # On Lockitron, it's "First Batch Ships in March 2013"
-ships: "Shipping in 4 - 6 months"
+ships: "Shipping in 4 - 6 months*"
 
 # On Lockitron, it's "Reserve Now"
 call_to_action: "Reserve For $49"
