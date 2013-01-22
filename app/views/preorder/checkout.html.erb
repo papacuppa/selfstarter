@@ -5,13 +5,15 @@
 <div class="gray_background">
   <div class="wrapper clearfix">
     <div class="main_content">
-      <h2>Check out</h2>
-      <p>		
+      <h2>Checkout</h2>
+      <h6>
+		  <font size="4">	
 		Your payment information will be collected and secured by [ENTER PROCESSOR HERE].
         <br />
         <br />
         Enter your email address below.
-      </p>
+      </font>        
+		 </h6>
       <%= form_tag "/preorder/prefill", :id => "checkout" do %>
         <%= email_field_tag "email", nil, :placeholder => "contact@wayki.co", :required => "required", :id => "email" %>
         <%= hidden_field_tag "preorder", true %>
