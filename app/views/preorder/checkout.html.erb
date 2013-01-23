@@ -1,3 +1,4 @@
+<body>
 <head>
 <script type="text/javascript" src="//use.typekit.net/wmg5noj.js"></script>
 <script type="text/javascript" target="_blank">try{Typekit.load();}catch(e){}</script>
@@ -22,5 +23,36 @@
       <% end %>
     </div>
     <%= render 'preorder/checkout/sidebar' %>
+
+<script type="text/javascript">
+  var PAYMILL_PUBLIC_KEY = '105586317259f74494cbe798fa2df017';
+</script>
+<script type="text/javascript" src="https://bridge.paymill.com/"></script>
+
+<form id="payment-form" action="#" method="POST">
+
+  <input class="card-amount-int" type="text" value="15" />
+  <input class="card-currency" type="text" value="EUR" />
+
+  <div class="form-row"><label>Credit card number</label>
+    <input class="card-number" type="text" size="20" /></div>
+
+  <div class="form-row"><label>CVC</label>
+    <input class="card-cvc" type="text" size="4" /></div>
+
+  <div class="form-row"><label>Name</label>
+    <input class="card-holdername" type="text" size="4" /></div>
+
+  <div class="form-row"><label>Expiry date (MM/YYYY)</label>
+    <input class="card-expiry-month" type="text" size="2" />
+    <span></span>
+    <input class="card-expiry-year" type="text" size="4" /></div>
+
+  <button class="submit-button" type="submit">Submit</button>
+
+</form>
+
   </div>
 </div>
+
+</body>
