@@ -35,56 +35,6 @@
   }
 }
 
-validateCardNumber(cardNumber)
-{
-// This credit card number is valid
-paymill.validateCardNumber('4111111111111111'); 
-}
-
-// These credit card numbers are invalid
-{
-paymill.validateCardNumber('4111-1111-1111-1111');
-paymill.validateCardNumber('4111 1111 1111 1111');
-paymill.validateCardNumber('12345678');
-paymill.validateCardNumber('test111');
-}
-
-validateExpiry(month, year)
-{
-paymill.validateExpiry('02', '15');      // false
-paymill.validateExpiry('02', '10');      // false
-paymill.validateExpiry('02', '2020');    // true
-paymill.validateExpiry(2, 2020);         // true
-}
-
-validateCvc(cvcNumber)
-{
-paymill.validateCvc('111'); // true
-paymill.validateCvc('foo'); // false
-}
-
-cardType(cardNumber)
-{
-paymill.cardType('4111111111111111'); // Visa
-paymill.cardType('378282246310005');  // American Express
-}
-
-validateAccountNumber(accountNumber)
-{
-paymill.validateAccountNumber('3837246'); // true
-paymill.validateAccountNumber('foo');     // false
-}
-
-validateBankCode(bankCode)
-{
-paymill.validateBankCode('20415230'); // true
-paymill.validateBankCode('foo');      // false
-}
-
-
-
-
-
 .sidebar 
 {
   float: right;
