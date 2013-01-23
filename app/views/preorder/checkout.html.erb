@@ -1,12 +1,14 @@
+<html>
 <head>
 <script type="text/javascript" src="//use.typekit.net/wmg5noj.js"></script>
 <script type="text/javascript" target="_blank">try{Typekit.load();}catch(e){}</script>
 
 
-  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+
+<body>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <script type="text/javascript">
-        var PAYMILL_PUBLIC_KEY = '105586317259f74494cbe798fa2df017
-';
+        var PAYMILL_PUBLIC_KEY = '105586317259f74494cbe798fa2df017';
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script type="text/javascript" src="https://bridge.paymill.de/"></script>
@@ -71,6 +73,9 @@
         });
 
     </script>
+</head>
+
+
 
 
 </head>
@@ -92,12 +97,11 @@
         <%= hidden_field_tag "quantity", params[:quantity] %>
         <%= submit_tag "Checkout", :class => "blue_button disabled", :id => "amazon_button" %>
       <% end %>
-    </div>
-    <%= render 'preorder/checkout/sidebar' %>
-	
-	
-	<body>
-<h1>Paymill Test</h1>
+	  
+	  
+	  
+
+<h3>Paymill Test</h3>
 
 <div class="payment-errors"></div>
 
@@ -126,10 +130,14 @@
         <input class="currency" type="text" size="3" value="EUR"/></div>
 
     <button class="submit-button" type="submit">Abschicken</button>
-</form>
-
-</body>
-	
-	
+</form>	  
+	  
+	  
+	  
+    </div>
+    <%= render 'preorder/checkout/sidebar' %>
   </div>
 </div>
+
+</body>
+</html>
