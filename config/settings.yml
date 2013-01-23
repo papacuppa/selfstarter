@@ -20,7 +20,7 @@ product_image_path: "wayki-alarmclock-toothbrush.jpg"
 value_proposition: "World's First Alarm Clock Toothbrush"
 
 # YouTube or Vimeo Video URL (The embed URL, without the query string options)
-video_embed_url: "http://player.vimeo.com/video/55785761"
+video_embed_url: "https://player.vimeo.com/video/55785761"
 
 # Amazon settings -- you'll need an Amazon Payments account, sign up here --> http://bit.ly/SGksTv
 
