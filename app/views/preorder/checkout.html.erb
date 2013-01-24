@@ -20,6 +20,9 @@
         <%= hidden_field_tag "quantity", params[:quantity] %>
         <%= submit_tag "Checkout", :class => "blue_button disabled", :id => "amazon_button" %>
       <% end %>
+	  	  
+	  		<a href="https://gocardless.com/pay/Y09BRKZA" title="wayki alarm clock toothbrush" style="-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;"> <img src="https://s3-eu-west-1.amazonaws.com/gocardless/images/public/buttons/updated/pay-with-gc-large.png" alt="Pay with GoCardless" style="-moz-user-drag:none;-webkit-user-drag:none;-ms-user-drag:none;" /> </a>
+	  
     </div>
     <%= render 'preorder/checkout/sidebar' %>
   </div>
