@@ -1,0 +1,9 @@
+# In config/initializers/gocardless.rb
+# (you'll need to create this file)
+
+GoCardless.account_details = {
+  :app_id     => 'Y8SYP4QMTMACYCWZM8NYP0XZF9AKXVRRWNFDWQ12AS28TGY0HS05P7D2VZ1XPF6Z',
+  :app_secret => 'PAMV20BN2P20A8WWD90C7GCDDCYRSFNX1KRKA6HSPBXJVNQZ6BY896XZBTT6EQXJ',
+  :token      => '7F468K80Y4MWZT3CTBFGGJ4J6HH0J991JP18YFM0TZXDBXNRS9V6JZJ8BYKMMQVR
+                  manage_merchant:08RXPBQZE4',
+}

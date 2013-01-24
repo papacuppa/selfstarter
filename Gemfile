@@ -7,6 +7,7 @@ group :development do
   gem 'pry-rails'
   gem 'thin'
   gem 'newrelic_rpm'
+  gem 'gocardless'
 end
 
 group :development do

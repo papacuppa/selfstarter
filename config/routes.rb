@@ -6,4 +6,6 @@ Selfstarter::Application.routes.draw do
   match '/preorder/ipn'           => 'preorder#ipn', :via => :post
   match '/preorder/prefill'       => 'preorder#prefill'
   match '/preorder/postfill'      => 'preorder#postfill'
+  post "gocardless/submit"
+  get "gocardless/confirm"
 end
