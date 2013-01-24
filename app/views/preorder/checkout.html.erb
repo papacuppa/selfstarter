@@ -11,7 +11,10 @@
 		Your payment information will be collected and secured by [ENTER PROCESSOR HERE]. The button below will take you through to their website.
         <br />
         <br />
-    <center><a href="https://gocardless.com/pay/Y09BRKZA" title="wayki alarm clock toothbrush" style="-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;"> <img src="https://s3-eu-west-1.amazonaws.com/gocardless/images/public/buttons/updated/pay-with-gc-large.png" alt="Pay with GoCardless" style="-moz-user-drag:none;-webkit-user-drag:none;-ms-user-drag:none;" /> </a>
+		  <%= form_tag "/preorder/prefill", :id => "checkout" do %>
+            <%= submit_tag "Checkout", :class => "blue_button disabled", :id => "https://gocardless.com/pay/Y09BRKZA" %>
+      <% end %>
+    <center><a href="https://gocardless.com/pay/Y09BRKZA" title="Pay with GoCardless" style="-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;"> <img src="https://s3-eu-west-1.amazonaws.com/gocardless/images/public/buttons/updated/pay-with-gc-large.png" alt="Pay with GoCardless" style="-moz-user-drag:none;-webkit-user-drag:none;-ms-user-drag:none;" /> </a>
 	  
     </div>
     <%= render 'preorder/checkout/sidebar' %>
