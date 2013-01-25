@@ -9,17 +9,49 @@
   })();
 </script>
 
-<script type="text/javascript">
-$('.wrapper-demo').on('click', function() {
-  $('#dd').toggleClass('active');
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js
+"></script>;
+<script type="text/javascript" >
+$(document).ready(function()
+{
+
+$(".account").click(function()
+{
+var X=$(this).attr('id');
+if(X==1)
+{
+$(".submenu").hide();
+$(this).attr('id', '0'); 
+}
+else
+{
+$(".submenu").show();
+$(this).attr('id', '1');
+}
+
 });
 
-$('.dropdown > li').on('click', function() {
-  var displayVal = $(this).text();
-  var realVal = $(this).data('js');
-  $('.wrapper-demo span').html('Gender: '+displayVal);
-  
-  console.log(realVal); //this displays "m" or "f" depending on your choice
+//Mouse click on sub menu
+$(".submenu").mouseup(function()
+{
+return false
+});
+
+//Mouse click on my account link
+$(".account").mouseup(function()
+{
+return false
+});
+
+
+//Document Click
+$(document).mouseup(function()
+{
+$(".submenu").hide();
+$(".account").attr('id', '');
+});
 });
 </script>
 
@@ -50,14 +82,18 @@ $('.dropdown > li').on('click', function() {
 		<br />
 		
 		
-<div class="wrapper-demo">
-  <div id="dd" class="wrapper-dropdown-1" tabindex="1">
-    <span>Gender</span>
-    <ul class="dropdown" tabindex="1">
-      <li data-js="m"><a href="#">Male</a></li>
-      <li data-js="f"><a href="#">Female</a></li>
-    </ul>
-  </div>
+<div class="dropdown">
+<a class="account" >My Account</a>
+
+<div class="submenu">
+<ul class="root">
+<li ><a href=" #Dashboard " >Dashboard</a></li>
+<li ><a href=" #Profile " >Profile</a></li>
+<li ><a href=" #settings ">Settings</a></li>
+<li ><a href=" #feedback ">Send Feedback</a></li>
+</ul>
+</div>
+
 </div>
 		
 		
