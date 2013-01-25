@@ -10,37 +10,17 @@
 </script>
 
 <script type="text/javascript">
-function DropDown(el) {
-    this.dd = el;
-    this.placeholder = this.dd.children('span');
-    this.opts = this.dd.find('ul.dropdown > li');
-    this.val = '';
-    this.index = -1;
-    this.initEvents();
-}
-DropDown.prototype = {
-    initEvents : function() {
-        var obj = this;
- 
-        obj.dd.on('click', function(event){
-            $(this).toggleClass('active');
-            return false;
-        });
- 
-        obj.opts.on('click',function(){
-            var opt = $(this);
-            obj.val = opt.text();
-            obj.index = opt.index();
-            obj.placeholder.text('Gender: ' + obj.val);
-        });
-    },
-    getValue : function() {
-        return this.val;
-    },
-    getIndex : function() {
-        return this.index;
-    }
-}
+$('.wrapper-demo').on('click', function() {
+  $('#dd').toggleClass('active');
+});
+
+$('.dropdown > li').on('click', function() {
+  var displayVal = $(this).text();
+  var realVal = $(this).data('js');
+  $('.wrapper-demo span').html('Gender: '+displayVal);
+  
+  console.log(realVal); //this displays "m" or "f" depending on your choice
+});
 </script>
 
 
@@ -70,12 +50,14 @@ DropDown.prototype = {
 		<br />
 		
 		
-<div id="dd" class="wrapper-dropdown-1" tabindex="1">
+<div class="wrapper-demo">
+  <div id="dd" class="wrapper-dropdown-1" tabindex="1">
     <span>Gender</span>
-    <ul class="dropdown">
-        <li><a href="#">Male</a></li>
-        <li><a href="#">Female</a></li>
+    <ul class="dropdown" tabindex="1">
+      <li data-js="m"><a href="#">Male</a></li>
+      <li data-js="f"><a href="#">Female</a></li>
     </ul>
+  </div>
 </div>
 		
 		
