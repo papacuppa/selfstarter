@@ -21,7 +21,7 @@
         <span><%= Settings.primary_stat %></span>
       </li>
       <li class="stats">
-        <%= number_to_currency Order.revenue, :precision => 0 %>
+        <%= number_to_currency(1234567890.50, :unit => "&pound;", :separator => ",", :delimiter => "", :format => "%n %u") Order.revenue, :precision => 0 %>
         <span>of <%= number_to_currency Settings.project_goal.to_f * Settings.price.to_f, :precision => 0 %></span>
       </li>
 
