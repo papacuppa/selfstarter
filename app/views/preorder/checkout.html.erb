@@ -9,20 +9,20 @@
   })();
 </script>
 
-function DropDown(el) {
-    this.dd = el;
-    this.initEvents();
-}
-DropDown.prototype = {
-    initEvents : function() {
-        var obj = this;
- 
-        obj.dd.on('click', function(event){
-            $(this).toggleClass('active');
-            event.stopPropagation();
-        }); 
-    }
-}
+
+$('.wrapper-demo').on('click', function() {
+  $('#dd').toggleClass('active');
+});
+
+$('.dropdown > li').on('click', function() {
+  var displayVal = $(this).text();
+  var realVal = $(this).data('js');
+  $('.wrapper-demo span').html('Gender: '+displayVal);
+  
+  console.log(realVal); //this displays "m" or "f" depending on your choice
+});
+
+
 </head>
 <div class="gray_background">
   <div class="wrapper clearfix">
@@ -46,12 +46,14 @@ DropDown.prototype = {
 		<br />
 		
 		
-<div id="dd" class="wrapper-dropdown-5" tabindex="1">John Doe
-    <ul class="dropdown">
-        <li><a href="#"><i class="icon-user"></i>Profile</a></li>
-        <li><a href="#"><i class="icon-cog"></i>Settings</a></li>
-        <li><a href="#"><i class="icon-remove"></i>Log out</a></li>
+<div class="wrapper-demo">
+  <div id="dd" class="wrapper-dropdown-1" tabindex="1">
+    <span>Gender</span>
+    <ul class="dropdown" tabindex="1">
+      <li data-js="m"><a href="#">Male</a></li>
+      <li data-js="f"><a href="#">Female</a></li>
     </ul>
+  </div>
 </div>
 		
 		
