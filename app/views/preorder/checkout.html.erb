@@ -8,54 +8,7 @@
     var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
   })();
 </script>
-
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js
-"></script>
-<script type="text/javascript" >
-$(document).ready(function()
-{
-
-$(".account").click(function()
-{
-var X=$(this).attr('id');
-if(X==1)
-{
-$(".submenu").hide();
-$(this).attr('id', '0'); 
-}
-else
-{
-$(".submenu").show();
-$(this).attr('id', '1');
-}
-
-});
-
-//Mouse click on sub menu
-$(".submenu").mouseup(function()
-{
-return false
-});
-
-//Mouse click on my account link
-$(".account").mouseup(function()
-{
-return false
-});
-
-
-//Document Click
-$(document).mouseup(function()
-{
-$(".submenu").hide();
-$(".account").attr('id', '');
-});
-});
-</script>
-
 </head>
-
-
 <div class="gray_background">
   <div class="wrapper clearfix">
     <div class="main_content">
@@ -68,31 +21,13 @@ $(".account").attr('id', '');
 		We've chosen UK based, GoCardless, as our payments processor. If you live outside the UK, please sign up to our <strong><u><a href="http://eepurl.com/uqwXf" target="_blank">International Mailing List</a></u></strong> for updates on availability.
 		<br>
 		<br>
-		Your payment information will be collected and secured by GoCardless. The button below will take you through to their website to secure your own Wayki.
+		Your payment information will be collected and secured by GoCardless. The button below will take you through to their website.
 		</font>
         </h6>
 		<br />
 		<br />
-    <center><a href="https://gocardless.com/pay/G0FHM1M1" title="Pay with GoCardless" style="-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;"> <img src="https://s3-eu-west-1.amazonaws.com/gocardless/images/public/buttons/updated/pay-with-gc-large.png" alt="Pay with GoCardless" style="-moz-user-drag:none;-webkit-user-drag:none;-ms-user-drag:none;" /> </a>
-</center>	 
-	 <br />
-<div class="dropdown">
-<a class="account" >*multiples</a>
-
-<div class="submenu">
-<ul class="root">
-<li ><a href="https://gocardless.com/pay/25NJETB8" >Reserve 2</a></li>
-<li ><a href="https://gocardless.com/pay/J545KTDY" >Reserve 3</a></li>
-<li ><a href=" #settings ">Reserve 4</a></li>
-<li ><a href=" #feedback ">Reserve 5</a></li>
-<li ><a href=" #feedback ">Reserve 10</a></li>
-<li ><a href=" #feedback ">Reserve 100</a></li>
-</ul>
-</div>
-
-</div>
-		
-		
+    <center><a href="https://gocardless.com/pay/2M44DMA4" title="Pay with GoCardless" style="-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;"> <img src="https://s3-eu-west-1.amazonaws.com/gocardless/images/public/buttons/updated/pay-with-gc-large.png" alt="Pay with GoCardless" style="-moz-user-drag:none;-webkit-user-drag:none;-ms-user-drag:none;" /> </a>
+	  
     </div>
     <%= render 'preorder/checkout/sidebar' %>
   </div>
