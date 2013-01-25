@@ -8,6 +8,21 @@
     var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
   })();
 </script>
+
+function DropDown(el) {
+    this.dd = el;
+    this.initEvents();
+}
+DropDown.prototype = {
+    initEvents : function() {
+        var obj = this;
+ 
+        obj.dd.on('click', function(event){
+            $(this).toggleClass('active');
+            event.stopPropagation();
+        }); 
+    }
+}
 </head>
 <div class="gray_background">
   <div class="wrapper clearfix">
@@ -27,7 +42,19 @@
 		<br />
 		<br />
     <center><a href="https://gocardless.com/pay/G0FHM1M1" title="Pay with GoCardless" style="-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;"> <img src="https://s3-eu-west-1.amazonaws.com/gocardless/images/public/buttons/updated/pay-with-gc-large.png" alt="Pay with GoCardless" style="-moz-user-drag:none;-webkit-user-drag:none;-ms-user-drag:none;" /> </a>
-	  
+	  <br />
+		<br />
+		
+		
+<div id="dd" class="wrapper-dropdown-5" tabindex="1">John Doe
+    <ul class="dropdown">
+        <li><a href="#"><i class="icon-user"></i>Profile</a></li>
+        <li><a href="#"><i class="icon-cog"></i>Settings</a></li>
+        <li><a href="#"><i class="icon-remove"></i>Log out</a></li>
+    </ul>
+</div>
+		
+		
     </div>
     <%= render 'preorder/checkout/sidebar' %>
   </div>
