@@ -21,8 +21,8 @@
         <span><%= Settings.primary_stat %></span>
       </li>
       <li class="stats">
-        <%= number_to_currency(123456789, :locale => :en-GB) Order.revenue, :precision => 0 %>
-        <span>of <%= number_to_currency(123456789, :locale => :en-GB) Settings.project_goal.to_f * Settings.price.to_f, :precision => 0 %></span>
+        <%= number_to_currency Order.revenue, :precision => 0 %>
+        <span>of <%= number_to_currency Settings.project_goal.to_f * Settings.price.to_f, :precision => 0 %></span>
       </li>
 
       <% if Settings.expiration_date.present? %>
