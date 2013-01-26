@@ -22,7 +22,7 @@
       </li>
       <li class="stats">
         <%= number_to_currency Order.revenue, :precision => 0 :locale => 'en-GB' %>
-        <span>of <%= number_to_currency Settings.project_goal.to_f * Settings.price.to_f, :precision => 0 %></span>
+        <span>of <%= number_to_currency Settings.project_goal.to_f * Settings.price.to_f, :precision => 0 :locale => 'en-GB' %></span>
       </li>
 
       <% if Settings.expiration_date.present? %>
