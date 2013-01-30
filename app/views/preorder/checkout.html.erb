@@ -1,7 +1,4 @@
 <head>
-<script type="text/javascript" src="//use.typekit.net/wmg5noj.js"></script>
-<script type="text/javascript" target="_blank">try{Typekit.load();}catch(e){}</script>
-
 <script type="text/javascript">
   (function() {
     var config = {
@@ -55,17 +52,26 @@ $(".account").attr('id', '');
 });
 });
 </script>
+
 </head>
+
+
 <div class="gray_background">
   <div class="wrapper clearfix">
     <div class="main_content">
       <h2>Checkout</h2>
       <h6>
-		  <font size="4">	
-		Your payment information will be collected and secured by [ENTER PROCESSOR HERE].
+		  <font size="3">	
+		We only accept direct debit for our crowdfund as it's safer and cheaper than credit cards. This also limits us to taking reservations from the UK only at this time.
+		<br>
+		<br>
+		We've chosen UK based, GoCardless, as our payments processor. If you live outside the UK, please sign up to our <strong><u><a href="http://eepurl.com/uqwXf" target="_blank">International Mailing List</a></u></strong> for updates on availability.
+		<br>
+		<br>
+		Your payment information will be collected and secured by GoCardless. The button below will take you through to their website to secure your own Wayki.
+		</font>
         <br />
-        <br />
-        Enter your email address below.
+        Enter your email address below:
       </font>        
 		 </h6>
       <%= form_tag "gocardless/submit", :id => "checkout" do %>
@@ -86,9 +92,10 @@ $(".account").attr('id', '');
 <li ><a href="PRE-AUTH AT 4090.00">Reserve 100</a></li>
 </ul>
 </div>
-      </div>
-	  
-	  
+
+</div>
+		
+		
     </div>
     <%= render 'preorder/checkout/sidebar' %>
   </div>
