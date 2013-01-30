@@ -58,7 +58,7 @@ $(".account").attr('id', '');
 
 <div class="gray_background">
   <div class="wrapper clearfix">
-    <div class="main_content <%= "payment_options" if Settings.use_payment_options %>">
+ 
       
 	   <h2>Checkout</h2>
       <h6>
@@ -69,13 +69,8 @@ $(".account").attr('id', '');
 		We've chosen UK based, GoCardless, as our payments processor. If you live outside the UK, please sign up to our <strong><u><a href="http://eepurl.com/uqwXf" target="_blank">International Mailing List</a></u></strong> for updates on availability.
 		<br>
 		<br>	
-        <% if Settings.use_payment_options %>
-          Your payment information will be collected and secured by GoCardless. The button below will take you through to their website to secure your own Wayki.
-        <% else %>
-          Your payment information will be collected and secured by GoCardless. The button below will take you through to their website to secure your own Wayki.
-        <% end %>
-
-      </p>
+        Your payment information will be collected and secured by GoCardless. The button below will take you through to their website to secure your own Wayki.
+        </p>
       <%= form_tag "/preorder/prefill", :id => "checkout" do %>
         <%= render 'preorder/payment_options' %>
         <div class="checkout_controls">
@@ -89,7 +84,7 @@ $(".account").attr('id', '');
           </div>
         </div>
       <% end %>
-    </div>
+    
     <%= render 'preorder/checkout/sidebar' %>
   </div>
 </div>

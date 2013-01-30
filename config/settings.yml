@@ -29,6 +29,11 @@ amazon_access_key: "AKIAJJGDLRDUYQ4YQJFA"
 amazon_secret_key: "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"
 price: 	49.00
 
+# if use_payment_options is set to true, then a set of radio buttons will be displayed with various payment options.
+# There is a PaymentOption model for storing info about payment options.  To set up your payment options you should
+# put code in seeds.rb, then run rake db:seed
+use_payment_options: false
+
 payment_description: "Get the morning advantage before everyone else."
 
 # Amazon limits how much we can charge people with their Multi-Use tokens.
