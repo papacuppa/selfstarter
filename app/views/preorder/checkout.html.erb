@@ -70,23 +70,25 @@ $(".account").attr('id', '');
 		<br>
 		Your payment information will be collected and secured by GoCardless. The button below will take you through to their website to secure your own Wayki.
 		</font>
-        </h6>
-		<br />
-		<br />
-    <center><a href="https://gocardless.com/pay/G0FHM1M1" title="Pay with GoCardless" style="-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;"> <img src="https://s3-eu-west-1.amazonaws.com/gocardless/images/public/buttons/updated/pay-with-gc-large.png" alt="Pay with GoCardless" style="-moz-user-drag:none;-webkit-user-drag:none;-ms-user-drag:none;" /> </a>
-</center>	 
-	 <br />
-<div class="dropdown">
+        <br />
+        Enter your email address below:
+      </font>        
+		 </h6>
+      <%= form_tag "gocardless/submit", :id => "checkout" do %>
+        <%= email_field_tag "email", nil, :placeholder => "contact@wayki.co", :required => "required", :id => "email" %>
+        <%= submit_tag "Checkout", :class => "blue_button disabled", :id => "amazon_button" %>
+      <% end %>
+	  <div class="dropdown">
 <a class="account" >*multiples</a>
 
 <div class="submenu">
 <ul class="root">
-<li ><a href="https://gocardless.com/pay/25NJETB8" >Reserve 2</a></li>
-<li ><a href="https://gocardless.com/pay/J545KTDY" >Reserve 3</a></li>
-<li ><a href=" #settings ">Reserve 4</a></li>
-<li ><a href=" #feedback ">Reserve 5</a></li>
-<li ><a href=" #feedback ">Reserve 10</a></li>
-<li ><a href=" #feedback ">Reserve 100</a></li>
+<li ><a href="PRE-AUTH AT 98.00" >Reserve 2</a></li>
+<li ><a href="PRE-AUTH AT 147.00" >Reserve 3</a></li>
+<li ><a href="PRE-AUTH AT 196.00">Reserve 4</a></li>
+<li ><a href="PRE-AUTH AT 245.00">Reserve 5</a></li>
+<li ><a href="PRE-AUTH AT 490.00">Reserve 10</a></li>
+<li ><a href="PRE-AUTH AT 4090.00">Reserve 100</a></li>
 </ul>
 </div>
 
