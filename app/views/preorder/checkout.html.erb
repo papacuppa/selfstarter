@@ -1,4 +1,7 @@
 <head>
+<script type="text/javascript" src="//use.typekit.net/wmg5noj.js"></script>
+<script type="text/javascript" target="_blank">try{Typekit.load();}catch(e){}</script>
+
 <script type="text/javascript">
   (function() {
     var config = {
@@ -52,39 +55,41 @@ $(".account").attr('id', '');
 });
 });
 </script>
-
 </head>
-
-
 <div class="gray_background">
   <div class="wrapper clearfix">
- 
-      
-	   <h2>Checkout</h2>
+    <div class="main_content">
+      <h2>Checkout</h2>
       <h6>
-		  <font size="3">	
-		We only accept direct debit for our crowdfund as it's safer and cheaper than credit cards. This also limits us to taking reservations from the UK only at this time.
-		<br>
-		<br>
-		We've chosen UK based, GoCardless, as our payments processor. If you live outside the UK, please sign up to our <strong><u><a href="http://eepurl.com/uqwXf" target="_blank">International Mailing List</a></u></strong> for updates on availability.
-		<br>
-		<br>	
-        Your payment information will be collected and secured by GoCardless. The button below will take you through to their website to secure your own Wayki.
-        </p>
-      <%= form_tag "/preorder/prefill", :id => "checkout" do %>
-        <%= render 'preorder/payment_options' %>
-        <div class="checkout_controls">
-          <div class="checkout_controls_wrapper">
-            <div class="checkout_controls_inner">
-              <%= email_field_tag "email", nil, :placeholder => "Email address", :required => "required", :id => "email" %>
-              <%= hidden_field_tag "preorder", true %>
-              <%= hidden_field_tag "quantity", params[:quantity] %>
-              <%= submit_tag "Checkout", :class => "blue_button disabled", :id => "amazon_button" %>
-            </div>
-          </div>
-        </div>
+		  <font size="4">	
+		Your payment information will be collected and secured by [ENTER PROCESSOR HERE].
+        <br />
+        <br />
+        Enter your email address below.
+      </font>        
+		 </h6>
+      <%= form_tag "gocardless/submit", :id => "checkout" do %>
+        <%= email_field_tag "email", nil, :placeholder => "contact@wayki.co", :required => "required", :id => "email" %>
+        <%= submit_tag "Checkout", :class => "blue_button disabled", :id => "amazon_button" %>
       <% end %>
-    
+	  
+	  <div class="dropdown">
+<a class="account" >*multiples</a>
+
+<div class="submenu">
+<ul class="root">
+<li ><a href="PRE-AUTH AT 98.00" >Reserve 2</a></li>
+<li ><a href="PRE-AUTH AT 147.00" >Reserve 3</a></li>
+<li ><a href="PRE-AUTH AT 196.00">Reserve 4</a></li>
+<li ><a href="PRE-AUTH AT 245.00">Reserve 5</a></li>
+<li ><a href="PRE-AUTH AT 490.00">Reserve 10</a></li>
+<li ><a href="PRE-AUTH AT 4090.00">Reserve 100</a></li>
+</ul>
+</div>
+      </div>
+	  
+	  
+    </div>
     <%= render 'preorder/checkout/sidebar' %>
   </div>
 </div>
