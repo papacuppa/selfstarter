@@ -74,7 +74,7 @@ class Order < ActiveRecord::Base
     @order.price    = options[:price]
     @order.quantity = options[:quantity]
     @order.number   = Order.next_order_number
-    @order.save!
+    @order.save! && @order.inactive!
 
     @order
   end
@@ -104,7 +104,7 @@ class Order < ActiveRecord::Base
     @order.token = options[:resource_id]
 
     if @order.token.present?
-      @order.save! 
+      @order.save! && @order.active!
       @order
     end
   end
