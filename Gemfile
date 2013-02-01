@@ -2,17 +2,17 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
 
+gem 'thin'
+
 group :development do
   gem 'sqlite3'
   gem 'pry-rails'
-  gem 'thin'
   gem 'annotate'
   gem 'localtunnel'
   gem 'therubyracer', :platforms => :ruby, :require => 'v8'
 end
 
 group :production do
-  gem 'thin'
   gem 'pg'
 end
 
@@ -22,6 +22,7 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
+  gem 'turbo-sprockets-rails3'
 end
 
 group :development, :test do
