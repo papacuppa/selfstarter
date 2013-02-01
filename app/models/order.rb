@@ -32,7 +32,9 @@ class Order < ActiveRecord::Base
   belongs_to :user
   self.primary_key = 'uuid'
 
-  validates_presence_of :price, :quantity
+  validates_presence_of :name, :price, :user_id, :quantity
+
+  scope :authorized, where("token != ? OR token != ?", "", nil)
 
   def total_price
     price * quantity
@@ -41,6 +43,28 @@ class Order < ActiveRecord::Base
   def pre_authorization
     GoCardless::PreAuthorization.find(token)
   end
+
+  def cancel!
+    self.token = nil
+    self.status = 'cancelled'
+    save!
+  end
+
+  ### State related methods ###
+
+  def inactive!
+    self.update_column(:status, 'inactive')
+  end
+
+  def active!
+    self.update_column(:status, 'inactive')
+  end
+
+  def cancelled!
+    self.update_column(:status, 'cancelled')
+  end
+
+  ### State related methods ###
 
   # This is where we create our Caller Reference for Amazon Payments, and prefill some other information.
   def self.prefill!(options = {})
@@ -110,12 +134,10 @@ class Order < ActiveRecord::Base
 
   # See what it looks like when you have some backers! Drop in a number instead of Order.count
   def self.current
-    Order.where("token != ? OR token != ?", "", nil).count
+    Order.authorized.count
   end
 
   def self.revenue
-    Order.current.to_f * Settings.price
+    Order.authorized.sum(&:total_price)
   end
-
-  validates_presence_of :name, :price, :user_id
 end

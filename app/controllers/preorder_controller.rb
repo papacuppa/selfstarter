@@ -13,7 +13,7 @@ class PreorderController < ApplicationController
     @order = Order.prefill!(name: Settings.product_name, price: Settings.price, quantity: params[:quantity].to_i, user_id: @user.id)
 
     go_url = GoCardless.new_pre_authorization_url(amount: @order.total_price, name: @order.name, interval_unit: 'month
-      ', interval_length: 1, user: { email: @user.email }, state: @order.uuid)
+      ', interval_length: 3, user: { email: @user.email }, state: @order.uuid)
     redirect_to go_url
 
     # This is where all the magic happens. We create a multi-use token with Amazon, letting us charge the user's Amazon account
@@ -54,6 +54,18 @@ class PreorderController < ApplicationController
     @order = Order.find_by_uuid(params[:uuid])
   end
 
-  def ipn
+  def webhook
+    webhook_data = params[:payload]
+
+    if GoCardless.webhook_valid?(webhook_data)
+      if webhook_data[:resource_type] == 'pre_authorization' && webhook_data[:action] == 'cancelled'
+        @order = Order.find_by_token webhook_data['pre_authorizations'].first[:id]
+        @order.cancel! if @order.present?
+      end
+    else
+      # log the error
+    end
+
+    render nothing: true, status: 200
   end
 end
