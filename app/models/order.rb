@@ -35,6 +35,8 @@ class Order < ActiveRecord::Base
   validates_presence_of :name, :price, :user_id, :quantity
 
   scope :authorized, where("token != ? OR token != ?", "", nil)
+  scope :charged, where("transaction_id != ? OR transaction_id != ?", "", nil)
+  scope :not_charged, where("transaction_id IS NULL")
 
   def total_price
     price * quantity
@@ -42,6 +44,12 @@ class Order < ActiveRecord::Base
 
   def pre_authorization
     GoCardless::PreAuthorization.find(token)
+  end
+
+  def charge!
+    self.transaction_id = pre_authorization.create_bill(name: name, amount: total_price).id
+    self.status = 'charged'
+    save!
   end
 
   def cancel!
@@ -57,11 +65,15 @@ class Order < ActiveRecord::Base
   end
 
   def active!
-    self.update_column(:status, 'inactive')
+    self.update_column(:status, 'active')
   end
 
   def cancelled!
     self.update_column(:status, 'cancelled')
+  end
+
+  def charged!
+    self.update_column(:status, 'charged')
   end
 
   ### State related methods ###
@@ -139,5 +151,9 @@ class Order < ActiveRecord::Base
 
   def self.revenue
     Order.authorized.sum(&:total_price)
+  end
+
+  def self.charge_backers!
+    Order.authorized.not_charged.map(&:charge!)
   end
 end
