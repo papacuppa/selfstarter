@@ -1,60 +1,14 @@
-<head>
-<script type="text/javascript">
-  (function() {
-    var config = {
-      kitId: 'wmg5noj',
-      scriptTimeout: 3000
-    };
-    var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
-  })();
-</script>
-
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js
-"></script>
-<script type="text/javascript" >
-$(document).ready(function()
-{
-
-$(".account").click(function()
-{
-var X=$(this).attr('id');
-if(X==1)
-{
-$(".submenu").hide();
-$(this).attr('id', '0'); 
-}
-else
-{
-$(".submenu").show();
-$(this).attr('id', '1');
-}
-
-});
-
-//Mouse click on sub menu
-$(".submenu").mouseup(function()
-{
-return false
-});
-
-//Mouse click on my account link
-$(".account").mouseup(function()
-{
-return false
-});
-
-
-//Document Click
-$(document).mouseup(function()
-{
-$(".submenu").hide();
-$(".account").attr('id', '');
-});
-});
-</script>
-
-</head>
-
+<!-- <head>
+  <script type="text/javascript">
+    (function() {
+      var config = {
+        kitId: 'wmg5noj',
+        scriptTimeout: 3000
+      };
+      var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+    })();
+  </script>
+</head> -->
 
 <div class="gray_background">
   <div class="wrapper clearfix">
@@ -73,29 +27,25 @@ $(".account").attr('id', '');
 		</h6>
       <%= form_tag "/preorder/prefill", :id => "checkout" do %>
         <%= email_field_tag "email", nil, :placeholder => "contact@wayki.co", :required => "required", :id => "email" %>
+        <%= select_tag "quantity", options_for_select(%w(1 2 3 4 5 10 100), 1), id: 'quantity' %>
         <%= hidden_field_tag "preorder", true %>
-        <%= hidden_field_tag "quantity", params[:quantity] %>
         <%= submit_tag "Checkout", :class => "blue_button disabled", :id => "amazon_button" %>
       <% end %>  
 	  
-	  <div class="dropdown">
-<a class="account" >*multiples</a>
-
-<div class="submenu">
-<ul class="root">
-<li ><a href="PRE-AUTH AT 98.00" >Reserve 2</a></li>
-<li ><a href="PRE-AUTH AT 147.00" >Reserve 3</a></li>
-<li ><a href="PRE-AUTH AT 196.00">Reserve 4</a></li>
-<li ><a href="PRE-AUTH AT 245.00">Reserve 5</a></li>
-<li ><a href="PRE-AUTH AT 490.00">Reserve 10</a></li>
-<li ><a href="PRE-AUTH AT 4090.00">Reserve 100</a></li>
-</ul>
-</div>
-
-</div>
-		
-		
-    </div>
+	 <!--  <div class="dropdown">
+      <a class="account" >*multiples</a>
+      <div class="submenu">
+        <ul class="root">
+          <li ><a href="PRE-AUTH AT 98.00" >Reserve 2</a></li>
+          <li ><a href="PRE-AUTH AT 147.00" >Reserve 3</a></li>
+          <li ><a href="PRE-AUTH AT 196.00">Reserve 4</a></li>
+          <li ><a href="PRE-AUTH AT 245.00">Reserve 5</a></li>
+          <li ><a href="PRE-AUTH AT 490.00">Reserve 10</a></li>
+          <li ><a href="PRE-AUTH AT 4090.00">Reserve 100</a></li>
+        </ul>
+      </div>
+    </div> -->
+  </div>
     <%= render 'preorder/checkout/sidebar' %>
   </div>
 </div>

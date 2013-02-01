@@ -7,8 +7,8 @@ Selfstarter =
 			$("#email").removeClass("highlight")
 			$("#amazon_button").removeClass("disabled")
 		else
-			$("#email").addClass("highlight") unless Selfstarter.firstTime
-			$("#amazon_button").addClass("disabled") unless $("#amazon_button").hasClass("disabled")
+			$("#email").addClass("highlight") # unless Selfstarter.firstTime
+			$("#amazon_button").addClass("disabled") # unless $("#amazon_button").hasClass("disabled")
 	init: ->
 		$("#email").bind "textchange", ->
 			Selfstarter.validateEmail()
@@ -17,6 +17,7 @@ Selfstarter =
 		# The first time they type in their email, we don't want it to throw a validation error
 		$("#email").change ->
 			Selfstarter.firstTime = false
+
 $ ->
 	Selfstarter.init()
 	$("#email").focus()

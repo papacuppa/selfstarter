@@ -25,8 +25,14 @@ video_embed_url: "https://player.vimeo.com/video/55785761"
 # Amazon settings -- you'll need an Amazon Payments account, sign up here --> http://bit.ly/SGksTv
 
 # To find your access key and secret key, head over to here --> http://bit.ly/R4I4ky (Follow that guide in the Seller Central page)
-amazon_access_key: "AKIAJJGDLRDUYQ4YQJFA"
-amazon_secret_key: "UzrvpAhMQTKG4FK7zZVUsyAWsGUpRUZmWULxQK7Q"
+# amazon_access_key: "AKIAJJGDLRDUYQ4YQJFA"
+# amazon_secret_key: "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"
+
+# GoCardless settings
+app_id: "PYV51QE9P6GM10NGFXP804BGH0AZKJ3PFQ5W81BX63W4RF08HJEMYJTA6SGY8EJC"
+app_secret: "PS99PYHHV0RZR9TDG9EN7182H1MSPK80XHGCQ721CMPEWTKRVRPYXG3GKN689ZFA"
+token: "V1S9A0B8Y48K0NZX22YQXQ2J1DPE058B0M38XFDBF8TV07FRNE4566FF18AM53KF"
+merchant_id: "08RXPBQZE4"
 price: 	49.00
 
 # if use_payment_options is set to true, then a set of radio buttons will be displayed with various payment options.

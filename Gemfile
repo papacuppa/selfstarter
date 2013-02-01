@@ -6,9 +6,8 @@ group :development do
   gem 'sqlite3'
   gem 'pry-rails'
   gem 'thin'
-end
-
-group :development do
+  gem 'annotate'
+  gem 'localtunnel'
   gem 'therubyracer', :platforms => :ruby, :require => 'v8'
 end
 
@@ -34,7 +33,10 @@ end
 gem 'jquery-rails'
 
 # Kickstarter's awesome Amazon Flexible Payments gem
-gem 'amazon_flex_pay'
+# gem 'amazon_flex_pay'
+
+# GoCardless for payments
+gem 'gocardless'
 
 # Configuration File
 gem 'rails_config'
