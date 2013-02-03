@@ -3,7 +3,7 @@
     <h2>
       Hooray! You've just reserved a <%= Settings.product_name %>!
     </h2>
-    <p>Congratulations, you're <%= Settings.primary_stat_verb %> number <span id="backer_number"><%= number_with_delimiter @order.number, :delimiter => "," %></span>,  in supporting <%= Settings.product_name %>. Share the great news!</p>
+    <p>Congratulations, you're <%= Settings.primary_stat_verb %> number <span id="backer_number"><%= number_with_delimiter @order.number, :delimiter => "," %></span> for <%= Settings.product_name %>. Take a moment to spread the word!</p>
     <br />
     <br />
     <div id="share" class="clearfix">
@@ -17,7 +17,7 @@
         <%= like_button(450, true) %>
       </div>
     </div>
-     <div id="order_id">Reservation ID: <%= @order.uuid %>. You can bookmark or print this page for your records.</div>
+     <div id="order_id">Reservation ID: <%= @order.uuid %>. <br>You can bookmark or print this page for your records.</div>
   </div>
 </div>
 
