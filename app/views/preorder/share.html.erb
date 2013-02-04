@@ -1,23 +1,22 @@
-<head>
-<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4e0f381c125dc904"></script>
-</head>
 <div class="gray_background" id='share_container'>
   <div class="wrapper center" id="congrats">
     <h2>
-      Hooray! You've just reserved your <%= Settings.product_description %>!
+      Hooray! You've just reserved a <%= Settings.product_name %>!
     </h2>
-    <p>Congratulations, you're <%= Settings.primary_stat_verb %> number <span id="backer_number"><%= number_with_delimiter Order.backers, :delimiter => "," %></span>,  in supporting <%= Settings.product_name %>. Share the great news!</p>
+    <p>Congratulations, you're <%= Settings.primary_stat_verb %> number <span id="backer_number"><%= number_with_delimiter @order.number, :delimiter => "," %></span>,  in supporting <%= Settings.product_name %>. Share the great news!</p>
     <br />
     <br />
-<div style="width:337px; float:right;">
-<div class="addthis_toolbox addthis_default_style">
-<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-<a class="addthis_button_tweet" tw:text="Just reserved my own @wayki. Can't wait! #alarmclocktoothbrush"></a>
-<a class="addthis_button_pinterest_pinit" pi:pinit:media="https://dl.dropbox.com/u/67589724/Wayki%20Press/wayki-alarmclock-toothbrush-h.jpg" pi:pinit:layout="horizontal"></a>
-</div>
-</div>
+    <div id="share" class="clearfix">
+      <div id='pin_button_container'>
+        <%= pin_it_button %>
+      </div>
+      <div id='tweet_button_container'>
+        <%= tweet_button %>
+      </div>
+      <div id='facebook_button_container'>
+        <%= like_button(450, true) %>
+      </div>
+    </div>
      <div id="order_id">Reservation ID: <%= @order.uuid %>. You can bookmark or print this page for your records.</div>
   </div>
 </div>
-
