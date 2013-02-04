@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.11'
 
 gem 'thin'
+gem 'newrelic_rpm'
 
 group :development do
   gem 'sqlite3'
@@ -31,7 +32,7 @@ group :development, :test do
 end
 
 # jQuery
-gem 'jquery-rails'
+gem 'jquery-rails', '2.1.4'
 
 # Kickstarter's awesome Amazon Flexible Payments gem
 # gem 'amazon_flex_pay'
