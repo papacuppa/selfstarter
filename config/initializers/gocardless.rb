@@ -5,4 +5,4 @@ GoCardless.account_details = {
   merchant_id: Settings.merchant_id
 }
 
-GoCardless.environment = :sandbox unless Rails.env.production?
+GoCardless.environment = :sandbox 
