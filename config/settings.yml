@@ -76,7 +76,7 @@ price_human: "Hurry! Discount For Backers 1 - 250"
 dont_give_them_a_reason_to_say_no: "Your card <u>won't</u> be charged until your Wayki is boxed up and ready. (Free UK shipping.)"
 
 # Social Stuff
-facebook_app_id: "1234567890"
+facebook_app_id: "134699390025749"
 # Tweets are prefixed with "I'm #{Settings.primary_stat} number X for #{Settings.product_name}"
 # Maybe mention something about your product vision -- e.g. "to replace keys with my phone"
 tweet_text: "for Wayki, the World's First Alarm Clock Toothbrush. Productivity in the morning at last!"
