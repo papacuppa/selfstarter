@@ -6,6 +6,12 @@
 		  <font size="3">	
 		We only accept direct debit for our crowdfund as it's safer and cheaper than credit cards. This also limits us to taking reservations from the UK only at this time.
 		<br>
+		
+		 <div id='tweet_button_container'>
+        <%= tweet_button %>
+      </div>
+		
+		
 		<br>
 		We've chosen UK based, GoCardless, as our payments processor. If you live outside the UK, please sign up to our <strong><u><a href="http://eepurl.com/uqwXf" target="_blank">International Mailing List</a></u></strong> for updates on availability.
 		<br>
@@ -37,3 +43,6 @@
     <%= render 'preorder/checkout/sidebar' %>
   </div>
 </div>
+
+
+<%= render 'preorder/share/twitter_js' %>
