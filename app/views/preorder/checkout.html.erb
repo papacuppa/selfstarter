@@ -10,7 +10,7 @@
       <h2>Checkout</h2>
       <h6>
 		  <font size="3">	
-		We x1&nbsp;(&pound;49.00) only accept direct debit for our crowdfund as it's safer and cheaper than credit cards. This also limits us to taking reservations from the UK only at this time.
+		We only accept direct debit for our crowdfund as it's safer and cheaper than credit cards. This also limits us to taking reservations from the UK only at this time.
 		<br>
 		<br>
 		We've chosen UK based, GoCardless, as our payments processor. If you live outside the UK, please sign up to our <strong><u><a href="http://eepurl.com/uqwXf" target="_blank">International Mailing List</a></u></strong> for updates on availability.
@@ -19,7 +19,7 @@
 		Simply enter your email address below, then GoCardless will handle the rest.
 		</font>        
 		</h6>
-      <%= form_tag "/preorder/prefill", :id => "checkout" do %>
+      <%= form_tag "/preorder/prefill", :id => "checkout" do, Encoding.default_external = "UTF-8"  %>
         <%= email_field_tag "email", nil, :placeholder => "contact@wayki.co", :required => "required", :id => "email" %>
         <%= select_tag "quantity", options_for_select(%w(x1&nbsp;(&pound;49.00) x2&nbsp;(&pound;98.00) x3&nbsp;(&pound;147.00) x4&nbsp;(&pound;196.00) x5&nbsp;(&pound;245.00) x10&nbsp;(&pound;441.00) x100&nbsp;(&pound;3920.00)), 1), id: 'quantity' %>
         <%= hidden_field_tag "preorder", true %>
