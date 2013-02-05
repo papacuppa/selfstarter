@@ -1,4 +1,3 @@
-# -*- encoding : utf-8 -*-
 class PreorderController < ApplicationController
   skip_before_filter :verify_authenticity_token, only: :webhook
 
