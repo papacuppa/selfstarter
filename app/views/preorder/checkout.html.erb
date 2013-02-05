@@ -1,44 +1,3 @@
-<div class="gray_background">
-  <div class="wrapper clearfix">
-    <div class="main_content">
-      <h2>Checkout</h2>
-      <h6>
-		  <font size="3">	
-		We only accept direct debit for our crowdfund as it's safer and cheaper than credit cards. This also limits us to taking reservations from the UK only at this time.
-		<br>
-		<br>
-		We've chosen UK based, GoCardless, as our payments processor. If you live outside the UK, please sign up to our <strong><u><a href="http://eepurl.com/uqwXf" target="_blank">International Mailing List</a></u></strong> for updates on availability.
-		<br>
-		<br>
-		Simply enter your email address below, then GoCardless will handle the rest.
-		</font>        
-		</h6>
-      <%= form_tag "/preorder/prefill", :id => "checkout" do %>
-        <%= email_field_tag "email", nil, :placeholder => "contact@wayki.co", :required => "required", :id => "email" %>
-        <%= select_tag "quantity", options_for_select(%w(1 2 3 4 5 10 100), 1), id: 'quantity' %>
-        <%= hidden_field_tag "preorder", true %>
-        <%= submit_tag "Checkout", :class => "blue_button disabled", :id => "amazon_button" %>
-      <% end %>  
-	  
-	 <!--  <div class="dropdown">
-      <a class="account" >*multiples</a>
-      <div class="submenu">
-        <ul class="root">
-          <li ><a href="PRE-AUTH AT 98.00" >Reserve 2</a></li>
-          <li ><a href="PRE-AUTH AT 147.00" >Reserve 3</a></li>
-          <li ><a href="PRE-AUTH AT 196.00">Reserve 4</a></li>
-          <li ><a href="PRE-AUTH AT 245.00">Reserve 5</a></li>
-          <li ><a href="PRE-AUTH AT 490.00">Reserve 10</a></li>
-          <li ><a href="PRE-AUTH AT 4090.00">Reserve 100</a></li>
-        </ul>
-      </div>
-    </div> -->
-  </div>
-    <%= render 'preorder/checkout/sidebar' %>
-  </div>
-</div>
-
-
 <div class="gray_background" id='share_container'>
   <div class="wrapper center" id="congrats">
     <h2>
@@ -64,4 +23,3 @@
 
 <%= render 'preorder/share/twitter_js' %>
 <%= render 'preorder/share/facebook_js' %>
-
