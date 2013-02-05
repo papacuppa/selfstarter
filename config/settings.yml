@@ -79,7 +79,7 @@ dont_give_them_a_reason_to_say_no: "Your card <u>won't</u> be charged until your
 facebook_app_id: "134699390025749"
 # Tweets are prefixed with "I'm #{Settings.primary_stat} number X for #{Settings.product_name}"
 # Maybe mention something about your product vision -- e.g. "to replace keys with my phone"
-tweet_text: "for Wayki, the World's First Alarm Clock Toothbrush. Productivity in the morning at last!"
+tweet_text: "Morning productivity at last!"
 
 # Google Analytics
 google_id: "UA-33127102-1"
