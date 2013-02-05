@@ -16,7 +16,7 @@
 		</h6>
       <%= form_tag "/preorder/prefill", :id => "checkout" do %>
         <%= email_field_tag "email", nil, :placeholder => "contact@wayki.co", :required => "required", :id => "email" %>
-        <%= select_tag "quantity", options_for_select(%w(1....@49.00 2....@98.00 3....@147.00 4....@196.00 5....@245.00 10....@490.00 100.....@4900.00), 1), id: 'quantity' %>
+        <%= select_tag "quantity", options_for_select(%w(1....49.00 2....98.00 3....147.00 4....196.00 5....245.00 10....490.00 100....4900.00), 1), id: 'quantity' %>
         <%= hidden_field_tag "preorder", true %>
         <%= submit_tag "Checkout", :class => "blue_button disabled", :id => "amazon_button" %>
       <% end %>  
