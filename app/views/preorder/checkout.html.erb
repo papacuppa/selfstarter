@@ -1,3 +1,4 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <div class="gray_background">
   <div class="wrapper clearfix">
     <div class="main_content">
@@ -15,7 +16,7 @@
 		</h6>
       <%= form_tag "/preorder/prefill", :id => "checkout" do %>
         <%= email_field_tag "email", nil, :placeholder => "contact@wayki.co", :required => "required", :id => "email" %>
-        <%= select_tag "quantity", options_for_select(%w(1...49 2...98 3...147 4...196 5...245 10...490 100...4900), 1), id: 'quantity' %>
+        <%= select_tag "quantity", options_for_select(%w(1...&pound;49 2...98 3...147 4...196 5...245 10...490 100...4900), 1), id: 'quantity' %>
         <%= hidden_field_tag "preorder", true %>
         <%= submit_tag "Checkout", :class => "blue_button disabled", :id => "amazon_button" %>
       <% end %>  
