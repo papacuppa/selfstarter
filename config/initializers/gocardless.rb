@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 GoCardless.account_details = {
   app_id: Settings.app_id,
   app_secret: Settings.app_secret,

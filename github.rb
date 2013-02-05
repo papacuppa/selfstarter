@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 Selfstarter::Application.routes.draw do
   root :to => 'preorder#index'
   match '/preorder'               => 'preorder#index'
