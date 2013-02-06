@@ -2,17 +2,18 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
 
-gem 'thin'
-
 group :development do
   gem 'sqlite3'
   gem 'pry-rails'
-  gem 'annotate'
-  gem 'localtunnel'
+  gem 'thin'
+end
+
+group :development do
   gem 'therubyracer', :platforms => :ruby, :require => 'v8'
 end
 
 group :production do
+  gem 'thin'
   gem 'pg'
 end
 
@@ -22,7 +23,6 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
-  gem 'turbo-sprockets-rails3'
 end
 
 group :development, :test do
@@ -31,13 +31,10 @@ group :development, :test do
 end
 
 # jQuery
-gem 'jquery-rails', '2.1.4'
+gem 'jquery-rails'
 
 # Kickstarter's awesome Amazon Flexible Payments gem
-# gem 'amazon_flex_pay'
-
-# GoCardless for payments
-gem 'gocardless'
+gem 'amazon_flex_pay'
 
 # Configuration File
 gem 'rails_config'

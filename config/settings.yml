@@ -10,7 +10,7 @@ project_goal: 1020.40
 # If you want to edit the FAQ, head over to app/views/preorder/homepage/_faqs.html.erb
 
 # This'll be both the page title (<title></title>) and the name in the header
-product_name: "Wayki Alarm Clock Toothbrush"
+product_name: "Wayki, the World's First Alarm Clock Toothbrush"
 
 # An image showcasing your product -- it'll show up when you pin your product
 # It should be in app/assets/images
@@ -25,14 +25,8 @@ video_embed_url: "https://player.vimeo.com/video/55785761"
 # Amazon settings -- you'll need an Amazon Payments account, sign up here --> http://bit.ly/SGksTv
 
 # To find your access key and secret key, head over to here --> http://bit.ly/R4I4ky (Follow that guide in the Seller Central page)
-# amazon_access_key: "AKIAJJGDLRDUYQ4YQJFA"
-# amazon_secret_key: "UzrvpAhMQTKG4FK7zZVUsyAWsGUpRUZmWULxQK7Q"
-
-app_id: "PYV51QE9P6GM10NGFXP804BGH0AZKJ3PFQ5W81BX63W4RF08HJEMYJTA6SGY8EJC"
-app_secret: "PS99PYHHV0RZR9TDG9EN7182H1MSPK80XHGCQ721CMPEWTKRVRPYXG3GKN689ZFA"
-token: "V1S9A0B8Y48K0NZX22YQXQ2J1DPE058B0M38XFDBF8TV07FRNE4566FF18AM53KF"
-merchant_id: "08RXPBQZE4" 
-
+amazon_access_key: "AKIAJJGDLRDUYQ4YQJFA"
+amazon_secret_key: "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"
 price: 	49.00
 
 # if use_payment_options is set to true, then a set of radio buttons will be displayed with various payment options.
@@ -70,16 +64,16 @@ ships: "Shipping in 4 - 6 months*"
 # On Lockitron, it's "Reserve Now"
 call_to_action: "Reserve For $49 &pound;"
 # On Lockitron, this is "Only $149 for a limited time"
-price_human: "Wayki will retail at 99. Save 50% now!" 
+price_human: "Hurry! Discount For Backers 1 - 250" 
 
 # The paragraph below the price. You'd probably say something about how you're not going to charge them before it ships (so it's less risky).
 dont_give_them_a_reason_to_say_no: "Your card <u>won't</u> be charged until your Wayki is boxed up and ready. (Free UK shipping.)"
 
 # Social Stuff
-facebook_app_id: "134699390025749"
+facebook_app_id: "1234567890"
 # Tweets are prefixed with "I'm #{Settings.primary_stat} number X for #{Settings.product_name}"
 # Maybe mention something about your product vision -- e.g. "to replace keys with my phone"
-tweet_text: "Morning productivity at last!"
+tweet_text: "the world's first Alarm Clock Toothbrush!"
 
 # Google Analytics
 google_id: "UA-33127102-1"
