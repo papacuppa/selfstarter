@@ -1,5 +1,12 @@
-#coding: utf-8 
- @str  = "<b>Hi</b>".html_safe
+
+def good_time(status = true)
+  if status
+    "Status is true, with a long message attached...".html_safe
+  else
+    "Status is false, with another long message".html_safe
+  end
+end
+
 <div class="gray_background">
   <div class="wrapper clearfix">
     <div class="main_content">
@@ -17,7 +24,7 @@
 		</h6>
       <%= form_tag "/preorder/prefill", :id => "checkout" do %>
         <%= email_field_tag "email", nil, :placeholder => "contact@wayki.co", :required => "required", :id => "email" %>
-        <%= select_tag "quantity", options_for_select(%w(x1<%=  @str  %>&nbsp;(&pound;49.00) x2&nbsp;(&pound;98.00) x3&nbsp;(&pound;147.00) x4&nbsp;(&pound;196.00) x5&nbsp;(&pound;245.00) x10&nbsp;(&pound;441.00) x100&nbsp;(&pound;3920.00)), 1), id: 'quantity' %>
+        <%= select_tag "quantity", options_for_select(%w(x1<%= good_time(true) %>&nbsp;(&pound;49.00) x2&nbsp;(&pound;98.00) x3&nbsp;(&pound;147.00) x4&nbsp;(&pound;196.00) x5&nbsp;(&pound;245.00) x10&nbsp;(&pound;441.00) x100&nbsp;(&pound;3920.00)), 1), id: 'quantity' %>
         <%= hidden_field_tag "preorder", true %>
         <%= submit_tag "Checkout", :class => "blue_button disabled", :id => "amazon_button" %>
       <% end %>  
