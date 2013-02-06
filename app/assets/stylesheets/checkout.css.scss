@@ -22,9 +22,10 @@
       width: 350px;
       outline: none;
     }
-  #quantity{
-      padding: 15px;
-      border: 2px solid #CCC;
+    #quantity{
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #CCC;
       outline: none;
     }
     .invalid
@@ -43,7 +44,7 @@
 .sidebar 
 {
   float: right;
-  width: 250px;
+  width: 300px;
   p 
   {
     font-size: 18px;
@@ -73,6 +74,7 @@ display: none;
 margin-left: 245px;
 padding: 40px 0 5px;
 border-radius: 6px;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
 }
 .dropdown li a 
 {
