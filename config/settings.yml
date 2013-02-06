@@ -70,7 +70,7 @@ ships: "Shipping in 4 - 6 months*"
 # On Lockitron, it's "Reserve Now"
 call_to_action: "Reserve For $49 &pound;"
 # On Lockitron, this is "Only $149 for a limited time"
-price_human: "Hurry! Discount For Backers 1 - 250" 
+price_human: "Wayki will retail at 99. Save 50% now!" 
 
 # The paragraph below the price. You'd probably say something about how you're not going to charge them before it ships (so it's less risky).
 dont_give_them_a_reason_to_say_no: "Your card <u>won't</u> be charged until your Wayki is boxed up and ready. (Free UK shipping.)"
