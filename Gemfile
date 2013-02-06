@@ -33,6 +33,9 @@ end
 # jQuery
 gem 'jquery-rails', '2.1.4'
 
+# Kickstarter's awesome Amazon Flexible Payments gem
+# gem 'amazon_flex_pay'
+
 # GoCardless for payments
 gem 'gocardless'
 
