@@ -49,6 +49,9 @@ class PreorderController < ApplicationController
 
     render nothing: true, status: 200
   end
+  
   def html
   @a  = "<p> sample text </p>".html_safe 
+  end
+  
 end
