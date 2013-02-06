@@ -13,7 +13,4 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery-ui
-//= require jquery.details
-//= require jquery.textchange
-//= require preorder
 //= require_tree .

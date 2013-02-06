@@ -22,6 +22,11 @@
       width: 350px;
       outline: none;
     }
+  #quantity{
+      padding: 15px;
+      border: 2px solid #CCC;
+      outline: none;
+    }
     .invalid
     {
       border: 1px solid orange;
@@ -68,7 +73,6 @@ display: none;
 margin-left: 245px;
 padding: 40px 0 5px;
 border-radius: 6px;
-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
 }
 .dropdown li a 
 {
